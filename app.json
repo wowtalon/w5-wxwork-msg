@@ -1,0 +1,28 @@
+{
+    "identification": "w5soar",
+    "is_public": true,
+    "name": "企业微信消息",
+    "version": "0.1",
+    "description": "W5 企业微信插件是用于 W5 SOAR 平台的一款插件，可用于向企业微信发送 webhook 消息。",
+    "type": " 基础应用 ",
+    "action": [
+      {
+        "name": "发送企微消息",
+        "func": "send_msg"
+      }
+    ],
+    "args": {
+      "send_msg": [
+        {
+          "key": "webhook",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "message",
+          "type": "text",
+          "required": true
+        }
+      ]
+    }
+  }
